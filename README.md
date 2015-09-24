@@ -1,1 +1,1 @@
-examples from Hartl Ruby on Rails Tutorialx
+examples from Hartl Ruby on Rails Tutorial.
