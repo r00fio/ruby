@@ -1,10 +1,13 @@
 require 'test_helper'
 
 class SiteLayoutTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
-  test 'lyout_links' do
+
+  test 'sign_up_title' do
+    get signup_path
+    assert_select "title", full_title("Sign Up")
+  end
+
+  test 'layout_links' do
     get root_path
     assert_template 'static_pages/home'
     assert_select "a[href=?]", root_path, count: 2
